@@ -35,7 +35,6 @@ cacheSolve <- function(x, ...) {
         if(!is.null(m)) {
                 message("getting cached data")
                 return(m)
-                ptiny(m)
         }
 
         data <- x$get()
