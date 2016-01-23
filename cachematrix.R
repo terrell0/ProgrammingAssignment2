@@ -1,6 +1,6 @@
 
 ## The first function, makeCacheMatrix creates a special "matrix", which 
-## is really a list containing a function
+## is really a list containing a function.
 
 ##    set the values of the matrix
 ##    get the values of the matrix
@@ -26,12 +26,16 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Calculate the inverse using the solve function as described in assignment notes
 
+
 cacheSolve <- function(x, ...) {
        
         m <- x$getinverse()
+        
+        ## Check to see if the matrix has been cached,
         if(!is.null(m)) {
                 message("getting cached data")
                 return(m)
+                ptiny(m)
         }
 
         data <- x$get()
