@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 m <<- NULL
         }
         get <- function() x
-        ## Use Invers instead of mean as described in call notes
+        ## Use Invers instead of mean as described in assignment notes
         setinverse <- function(inverse) m <<- inverse  
         getinverse <- function() m
         list(set = set, get = get,
