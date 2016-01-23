@@ -1,6 +1,6 @@
 
 ## The first function, makeCacheMatrix creates a special "matrix", which 
-## is really a list containing a function to
+## is really a list containing a function
 
 ##    set the values of the matrix
 ##    get the values of the matrix
